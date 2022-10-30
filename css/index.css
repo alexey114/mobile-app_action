@@ -42,6 +42,15 @@
 .button_stop{
     background-color:greenyellow;
 }
+.button_audio{
+    background-color: blue;
+}
+.button_audio:hover{
+    background-color: rgb(0, 157, 255);
+}
+.button_audio:active{
+    background-color: rgb(0, 255, 242);
+}
 
 .block{
     display: inline-block;

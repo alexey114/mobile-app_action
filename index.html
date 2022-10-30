@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile app</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="manifest" href="/manifest.json">
 </head>
 
 <body>
@@ -15,13 +14,21 @@
         <div class="subcontainerApp">
             <h1 class="header_function">Функции браузера</h1>
             <button class="button realize" onclick="callGPS()">GPS</button>
-            <button class="button realize" onclick="callNotification()">Уведомление</button>
-            <!-- <div class="block">
-                <button id="start" class="button button_rec realize">Запись звука</button>
-                <button id="stop" class="button button_stop realize">Стоп</button>
-            </div> -->
+            <button class="button realize" onclick="callAlert()">Alert</button>
+            <div class="block">
+                <button id="start" class="button button_rec realize" onclick="recordAudio()">Запись звука</button>
+                <button id="stop" class="button button_stop realize" onclick="stopRecordAudio()">Стоп</button>
+            </div>
             <a href="tel:+79296538035"><button class="button realize">Позвонить</button></a>
             <button class="button realize flashlight__button">Фонарик</button>
+            <div class="">
+                <button id="play-btn" class="button button_audio">Запуск</button>
+                <button id="pause-btn" class="button button_audio">Пауза</button>
+                <button id="up-btn" class="button button_audio">Громче</button>
+                <button id="down-btn" class="button button_audio">Тише</button>
+                <button id="ff-btn" class="button button_audio">Вперед</button>
+                <button id="rew-btn" class="button button_audio">Назад</button>
+            </div>
             <div class="block_photo">
                 <button id="snap" class="button realize">Сделать снимок</button>
                 <div class="inner_photo">
@@ -67,12 +74,15 @@
 
         </div>
     </div>
+    <script src="cordova.js"></script>
     <script src="js/gps.js"></script>
-    <!-- <script src="js/recorder.js"></script> -->
-    <!-- <script src="js/photo.js"></script> -->
-    <!-- <script src="js/video.js"></script> -->
-    <!-- <script src="js/flashlight.js"></script> -->
-    <!-- <script src="js/save_txt.js"></script> -->
+    <script src="js/notification.js"></script>
+    <script src="js/recorder.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/photo.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/flashlight.js"></script>
+    <script src="js/save_txt.js"></script>
 </body>
 
 </html>
